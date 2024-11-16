@@ -9,10 +9,12 @@ export function App() {
   useLayoutEffect(() => {
     const previewElement = document.getElementById('preview')
     if (!previewElement) return
+
     const tuiInstances = new Map()
+
     function initializeTenoxUI(config) {
       tuiInstances.clear()
-      previewElement.querySelectorAll('*').forEach(element => {
+      previewElement.querySelectorAll('*').forEach((element) => {
         const instance = new MakeTenoxUI({
           element,
           ...config
@@ -32,7 +34,8 @@ export function App() {
       tuiInstances.clear()
     }
   }, [htmlContent])
-  const handleInputChange = event => {
+
+  const handleInputChange = (event) => {
     setHtmlContent(event.target.value)
   }
 

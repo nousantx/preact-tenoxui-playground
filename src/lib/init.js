@@ -69,7 +69,7 @@ export function init() {
 (.btn): [all]-unset mr-10px h-40px d-inline-flex ai-center px-12px [cursor]-pointer bg-neutral-900 hover:bg-neutral-800 tr-time-300ms text-neutral-50 br-8px fs-14px fw-500;
 (.text): fw-500 ls--0.035em fs-14px;`
     )
-    document.querySelectorAll('*').forEach(element => {
+    document.querySelectorAll('*').forEach((element) => {
       new MakeTenoxUI({ element, ...tenoxuiConfig }).useDOM()
     })
   }, [])
