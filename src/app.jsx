@@ -4,7 +4,9 @@ import { MakeTenoxUI } from '@tenoxui/core/full'
 
 export function App() {
   init()
-  const [htmlContent, setHtmlContent] = useState('<div class="bg-red-600 box-200px"></div>')
+  const [htmlContent, setHtmlContent] = useState(`<div class="center bg-neutral-900 text-neutral-50 box-250px br-1rem">
+  <h1 class="fs-2rem fw-500 ls--0.035em">Hello World!</h1>
+</div>`)
 
   useLayoutEffect(() => {
     const previewElement = document.getElementById('preview')
